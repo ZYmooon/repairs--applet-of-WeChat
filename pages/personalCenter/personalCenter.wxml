@@ -1,0 +1,14 @@
+<view class='center-container'>
+  <view class='wrap' catchtap="onInstructionsTap">
+    <text class='describe'>使用说明</text>
+    <image class='moreImg' src='../../images/icon/centermore.png'></image>
+  </view>
+ <view class='wrap' catchtap="onFeedbackTap">
+    <text class='describe'>反馈意见</text>
+    <image class='moreImg' src='../../images/icon/centermore.png'></image>
+  </view>
+ <view class='wrap' catchtap="onPhoneTap">
+    <text class='describe'>联系维修人员</text>
+    <image class='moreImg' src='../../images/icon/centermore.png'></image>
+  </view>
+</view>

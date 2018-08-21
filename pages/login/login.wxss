@@ -1,0 +1,4 @@
+/* pages/login/login.wxss */
+text{
+  border: 1px solid;
+}

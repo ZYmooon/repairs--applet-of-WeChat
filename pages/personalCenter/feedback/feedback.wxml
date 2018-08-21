@@ -1,0 +1,13 @@
+<view class='fb-container'>
+  <form class='fb-wrap'>
+    <text class='fbtext'>反馈意见</text>
+    <textarea placeholder='请输入您的反馈内容' maxlength="520" value='{{fbContent}}' bindinput='jscontent'></textarea>
+    <text class="currentWordNumber">{{maxNum}}字以内</text>
+    <view class='overlay' wx:if="{{isShowModal}}">
+      <view class='modal'>
+        <text class='fbtext'>感谢您的反馈</text>
+      </view>
+    </view>
+    <button formType="submit" bindtap='submitTab'>提交</button>
+  </form>
+</view>

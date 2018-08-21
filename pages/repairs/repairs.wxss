@@ -1,0 +1,83 @@
+.repairs-wrap {
+  position: relative;
+}
+.item-wrap{
+  margin-top: 20rpx;
+}
+.swiper-tab {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  height: 114rpx;
+  line-height: 106rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  position: fixed;
+  background-color: #fff;
+}
+
+.swiper-tab-item{
+  
+  width: 177rpx;
+}
+
+.activeLine {
+  height: 10rpx;
+  background-color:#289dd9;
+  border-radius: 5px;
+}
+
+.active {
+  /* border-bottom: 8rpx solid #289dd9; */
+  color: #289dd9;
+}
+
+.item {
+  height: 170rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 10rpx;
+  padding-left: 33rpx;
+  font-size: 30rpx;
+}
+
+.facility {
+  margin-top: 31rpx;
+  margin-bottom: 20rpx;
+  height: 29rpx;
+}
+
+.current-time {
+  margin-top: 39rpx;
+  margin-bottom: 39rpx;
+  color: #666;
+}
+
+.complete-wrap .item {
+  height: 215rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 10rpx;
+  padding-left: 33rpx;
+  font-size: 30rpx;
+  font-family: PingFang-SC-Medium;
+}
+
+.complete-wrap .item  .facility {
+  margin-top: 41rpx;
+  height: 29rpx;
+}
+
+.complete-wrap .item  .current-time {
+  margin-top: 29rpx;
+  color: #666;
+}
+
+.complete-wrap .item .tip {
+  color: #f00;
+  margin-top: -25rpx;
+}

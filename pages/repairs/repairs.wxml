@@ -1,0 +1,46 @@
+<view class='repairs-wrap'>
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTabA">
+      <text>待响应</text>
+      <view class="{{currentTab==0?'activeLine':''}}" ></view>
+    </view>
+
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTabB">
+      <text>已响应</text>
+      <view class="{{currentTab==1?'activeLine':''}}" style=''></view>
+    </view>
+
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTabC">
+      <text>已完成</text>
+      <view class="{{currentTab==2?'activeLine':''}}" ></view>
+    </view>
+  </view>
+
+
+  <view style='height:93rpx;'></view>
+  <view class='item-wrap'>
+    <view class='no-response-wrap' wx:for="{{list1}}" wx:for-item="item1" wx:key="{{item1.id}}" wx:if='{{currentTab===0}}'>
+      <view class='item'>
+        <text class='facility'>{{item1.facility_name}} : {{item1.query}}</text>
+        <text class='current-time'>{{item1.create_time}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='item-wrap'>
+    <view class='had-response-wrap' wx:for="{{list2}}" wx:for-item="item2" wx:key="{{item2.id}}" wx:if='{{currentTab===1}}'>
+      <view class='item'>
+        <text class='facility'>{{item2.facility_name}}:{{item2.query}}</text>
+        <text class='current-time'>{{item2.create_time}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='item-wrap'>
+    <view class='complete-wrap' wx:for="{{list3}}" wx:for-item="item3" wx:key="{{item3.id}}" wx:if='{{currentTab===2}}'>
+      <view class='item'>
+        <text class='facility'>{{item3.facility_name}}:{{item3.query}}</text>
+        <text class='current-time'>{{item3.create_time}}</text>
+        <text class='tip'>{{item3.maintain_ps}}</text>
+      </view>
+    </view>
+  </view>
+</view>

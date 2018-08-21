@@ -1,0 +1,385 @@
+.item-wrap {
+  font-size: 30rpx;
+  display: flex;
+  width: 640rpx;
+  margin-left: 34rpx;
+  position: relative;
+}
+
+.item-wrap .label {
+  margin-top: 65rpx;
+  width: 145rpx;
+  height: 29rpx;
+  font-size: 30rpx;
+  line-height: 100%;
+}
+/* 报修班级 */
+
+.item-wrap .gradeNum{
+  margin-top: 33rpx;
+  background-color: #fff;
+  width: 440rpx;
+  height: 88rpx;
+  padding-left: 47rpx;
+  border-radius: 10rpx;
+  border: solid 1px #eee;
+}
+
+
+
+
+/* 报修人 */
+.item-wrap .simulation-input {
+  margin-top: 33rpx;
+  background-color: #fff;
+  width: 440rpx;
+  height: 88rpx;
+  padding-left: 47rpx;
+  border-radius: 10rpx;
+  border: solid 1px #eee;
+}
+.item-wrap .tip{
+  font-size: 26rpx;
+  color: #ff0000;
+  position: absolute;
+  top:136rpx;
+}
+.closed{
+  width: 676rpx;
+}
+.closed label icon{
+  position: absolute;
+  width: 36rpx;
+  height: 36rpx;
+  right: 5rpx;
+  top:55rpx;
+}
+/*报修人电话*/
+.phone{
+  margin-top: 31rpx;
+ 
+}
+.phone .label{
+   width: 144rpx;
+}
+
+/* 报修设备 */
+.facility{
+  margin-top: 31rpx;
+}
+.facility .facility-text{
+  width: 147rpx;
+  line-height: 88rpx;
+}
+.select-facility-box{
+  background: #fff;
+  width: 490rpx;
+  height: 88rpx;
+  position: relative;
+  border-radius: 10rpx;
+}
+.select-facility{
+  box-sizing: border-box;
+  width: 100%;
+  height: 88rpx;
+  border:1px solid #eee;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.select-facility-text{
+  font-size: 30rpx;
+  flex: 1;
+  padding-left: 25rpx;
+}
+.select-img{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition:transform 0.3s;
+}
+.select-img-rotate{
+  transform:rotate(180deg); 
+}
+.option-facility-box{
+  position: absolute;
+  top: 88rpx;
+  width: 100%;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+  z-index: 99;
+}
+.option-facility{
+  display: block;
+  line-height: 88rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #efefef;
+  height: 88rpx;
+  padding-left: 46rpx;
+}
+/* 报修问题 */
+.query{
+  margin-top: 31rpx;
+}
+.query .query-text{
+  width: 147rpx;
+  line-height: 88rpx;
+}
+.select-query-box{
+  background: #fff;
+  width: 490rpx;
+  height: 88rpx;
+  position: relative;
+  border-radius: 10rpx;
+}
+.select-query{
+  box-sizing: border-box;
+  width: 100%;
+  height: 88rpx;
+  border:1px solid #eee; 
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.select-query-text{
+  font-size: 30rpx;
+  flex: 1;
+  padding-left: 25rpx;
+}
+.select-img{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition:transform 0.3s;
+}
+.select-img-rotate{
+  transform:rotate(180deg); 
+}
+.option-query-box{
+  position: absolute;
+  top: 88rpx;
+  width: 100%;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+  z-index: 99;
+}
+.option-query{
+  display: block;
+  line-height: 88rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #efefef;
+  height: 88rpx;
+  padding-left: 46rpx;
+}
+.item-wrap textarea {
+  margin-top: 33rpx;
+  background-color: #fff;
+  width: 430rpx;
+  height: 188rpx;
+  padding: 12rpx 20rpx 45rpx 40rpx;
+  border-radius: 10rpx;
+  border: solid 1px #eee;
+  position: relative;
+}
+.content-wrap{
+  position: relative;
+  width: 640rpx;
+  height: 286rpx;
+}
+.item-wrap .maxnumber{
+  position: absolute;
+  bottom: 20rpx;
+  right: 25rpx;
+}
+
+.img-text-title {
+  width: 216rpx;
+  margin-top: 59rpx;
+  margin-left: 26rpx;
+  font-size: 29rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.upload-image{
+  display: flex;
+  flex-direction: row;
+  width: 710rpx;
+  margin-left: 34rpx;
+  margin-top: 30rpx;
+}
+.addImage{
+  margin-right: 33rpx;
+  width: 106rpx;
+  height: 106rpx;
+  border: 2px solid #dcdcdc;
+  
+}
+
+.index-container button {
+  width: 684rpx;
+  border-radius: 50rpx;
+  background-color: #268dd9;
+  height: 104rpx;
+  margin-top: 197rpx;
+  color: #fff;
+  margin-left: 34rpx;
+  margin-bottom: 334rpx;
+}
+.bottom-line{
+  height: 1rpx;
+  width: 100%;
+  
+}
+
+.img-wrap-box{
+  height: 110rpx;
+  margin-top: 30rpx;
+}
+.addimgbtn {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 110rpx;
+  height: 110rpx;
+  border: solid 2rpx #dcdcdc;
+  line-height: 110rpx;
+  text-align: center;
+  margin-left: 34rpx;
+}
+
+.addimgbtn::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 35%;
+  height: 2rpx;
+  background: #999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+}
+
+.addimgbtn::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 35%;
+  height: 2rpx;
+  background: #999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.addimgbtn::before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 35%;
+  width: 2rpx;
+  background: #999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img {
+  display: inline-block;
+  width: 110rpx;
+  height: 110rpx;
+}
+
+.img-box {
+  position: relative;
+  display: inline-block;
+  margin-left: 34rpx;
+ 
+}
+
+ .img-close {
+  position: absolute;
+  display: inline-flex;
+  top: -10rpx;
+  right: -10rpx;
+  width: 26rpx;
+  height: 26rpx;
+  justify-content: center;
+  align-items: center;
+  font-size: 19rpx;
+  background: #999999;
+  color: #05293B;
+  border-radius: 50%;
+  line-height: 26rpx;
+} 
+
+.login-btn {
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 35%;
+  left: 50%;
+  width: 80%;
+  padding: 50rpx 35rpx;
+  background: #fff;
+  border: 1rpx solid #eee;
+  border-radius: 8rpx;
+  animation: login 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  transition: transform;
+}
+
+@keyframes login {
+  from {
+    transform: translate(-50%, 500%);
+  }
+
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.login-btn-mask {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.login-btn-title {
+  color: #333;
+  font-size: 39rpx;
+  font-weight: bold;
+  letter-spacing: 4rpx;
+}
+
+.login-btn-content {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.login-btn-login {
+  background: rgb(26, 173, 25);
+  color: #fff;
+  font-size: 34rpx;
+  border: 2rpx solid rgb(26, 173, 25);
+  width: 50%;
+  border-radius: 6rpx;
+}

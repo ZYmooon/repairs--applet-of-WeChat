@@ -1,0 +1,91 @@
+<view class="index-container">
+  <form catchsubmit='formSubmit'>
+    <view class='item-wrap classNum'>
+      <text class="label">报修班级</text>
+      <input catchtap='scanCode' class='simulation-input' disabled='{{true}}' value="{{ className || '扫码获取班级' }}" />
+    </view>
+
+    <view class='item-wrap closed'>
+      <text class="label">报修人</text>
+      <label>
+        <input name="name" bindblur='inputBlur' value='{{inputName}}' class='simulation-input' placeholder='老师输入姓名'></input>
+        <icon type="clear" wx:if="{{noUser}}" bindtap='clearName'></icon>
+        <icon type="success" wx:if="{{isUser}}" color='#289dd9'></icon>
+        <text class='tip' wx:if="{{isAuthority}}">此用户名没有使用权限</text>
+      </label>
+    </view>
+    <view class='item-wrap phone'>
+      <text class='label'>联系电话</text>
+      <label>
+        <input name="phone" type='number' maxlength="11" value='{{inputPhone}}' class='simulation-input' placeholder='老师输入电话'></input>
+      </label>
+    </view>
+
+
+    <view class='item-wrap facility'>
+      <text class='facility-text'>报修设备</text>
+      <view class='select-facility-box'>
+        <view class='select-facility' catchtap='selectFacilityTap' data-facilityshow="{{facilityShow}}">
+          <input class='select-facility-text' disabled='false' placeholder='选择报修设备' value='{{selectFacilityVal}}'></input>
+          <image class='select-img {{facilityShow&&"select-img-rotate"}}' src='/images/icon/pulldown.png'></image>
+        </view>
+        <view class='option-facility-box' style='height:{{facilityShow?(selectFacility.length>1?440:selectFacility.length*88):0}}rpx;'>
+          <block wx:for='{{selectFacility}}' wx:key='index'>
+            <text class='option-facility' style='{{facilityIndex==selectFacility.length-1&&"border:0;"}}' data-id='{{item.id}}' data-index='{{index}}' catchtap='optionFacilityTap'>{{item.name}}</text>
+          </block>
+        </view>
+      </view>
+    </view>
+    <view class='item-wrap query'>
+      <text class='query-text'>报修问题</text>
+      <view class='select-query-box'>
+        <view class='select-query' catchtap='selectQueryTap' data-queryshow="{{queryShow}}">
+          <input name="query" disabled='false' class='select-query-text' placeholder='选择报修问题' value='{{selectQueryArr}}'></input>
+          <image class='select-img {{queryShow&&"select-img-rotate"}}' src='/images/icon/pulldown.png'></image>
+        </view>
+        <view class='option-query-box' style='height:{{queryShow?(selectQueryList.length>0?440:selectQuery.length*88):0}}rpx;'>
+          <checkbox-group bindchange='optionQueryTap'>
+            <block wx:for='{{selectQueryList}}' wx:key='index'>
+              <checkbox class='option-query' value='{{item.query}}' checked='{{checked}}'>{{item.query}}</checkbox>
+            </block>
+          </checkbox-group>
+
+        </view>
+      </view>
+    </view>
+
+    <view class='item-wrap content-wrap'>
+      <text class='label'>报修内容</text>
+      <label>
+        <textarea name="content" placeholder='请简单描述问题' maxlength="200" value='{{contentVal}}' wx:if='{{hiddenTextarea}}'> </textarea>
+        <text class='maxnumber'>200字以内</text>
+      </label>
+    </view>
+    <view class='img-wrap'>
+      <view class='img-text-title'>
+        <text class='img-text'>附件图片</text>
+        <text class='img-number'>({{imgNum}}/5)</text>
+      </view>
+      <view class='img-wrap-box'>
+        <view class='img-box' wx:for="{{imgArr}}" wx:key="*1">
+          <image name="picture" class='img' src='{{item}}' catchtap='previewImage' data-index='{{index}}'></image>
+          <view class='img-close' catchtap='closeimg' data-index='{{index}}'>x</view>
+        </view>
+        <block wx:if="{{imgArr.length<5}}">
+          <view bindtap='addImg' class='addimgbtn'></view>
+        </block>
+      </view>
+    </view>
+    <button formType="submit">提交</button>
+    <view class='bottom-line' form-type="submit"></view>
+  </form>
+  <!-- 登录  -->
+</view>
+
+<view class='login-wrap' wx:if="{{!isLogin}}" data-loggin='{{!isLogin}}'>
+  <view class='login-btn-mask'></view>
+  <button class='login-btn' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+    <view class='login-btn-content'>请单击授权使用报修小程序</view>
+    <view class='login-btn-login weui-btn weui-btn_plain-primary'>登录</view>
+  </button>
+</view>

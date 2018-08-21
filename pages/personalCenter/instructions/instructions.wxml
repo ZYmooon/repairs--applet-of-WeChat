@@ -1,0 +1,7 @@
+<view class='itt-wrap'>
+  <view class='br'></view>
+  <text class='itt-text'>
+  {{instructions}}
+  </text>
+</view> 
+ 

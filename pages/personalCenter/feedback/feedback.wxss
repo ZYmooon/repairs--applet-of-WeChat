@@ -1,0 +1,78 @@
+
+
+.fb-container {
+  margin-top: 37rpx;
+  padding-left: 33rpx;
+  position: relative;
+}
+.fb-wrap{
+  position: relative;
+}
+.fbtext {
+  font-size: 36rpx;
+}
+
+.fb-container textarea {
+  width: 648rpx;
+  height: 438rpx;
+  margin-top: 38rpx;
+  border-radius: 5rpx;
+  border: solid 1px #bfbfbf;
+  background-color: #fff;
+  /* padding-top: 17rpx;
+  padding-left: 19rpx;
+  padding-right: 17rpx;
+  padding-bottom:200rxp;  */
+  padding: 17rpx 19rpx 50rpx 19rpx;
+  font-size: 30rpx;
+}
+
+.fb-container button {
+  width: 684rpx;
+  margin-left: 0rpx;
+  border-radius: 50rpx;
+  background-color: #268dd9;
+  height: 104rpx;
+  margin-top: 264rpx;
+  color: #fff;
+}
+
+.currentWordNumber {
+  font-size: 26rpx;
+  color: #333333;
+  position: absolute;
+  right: -660rpx;
+  bottom: 20rpx;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.modal {
+  width: 510rpx;
+  height: 232rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+  background-color: #fff;
+  text-align: center;
+  line-height: 232rpx;
+}
+.tabbar_text{
+  margin-top: 5rpx;
+}
+.tab-bar{
+  margin-left: -34rpx;
+}

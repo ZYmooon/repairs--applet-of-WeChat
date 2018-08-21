@@ -1,0 +1,23 @@
+ page{
+  background-color: #fff; 
+}
+.br{
+  width: 750rpx;
+  height: 3px;
+  background: #f6f6f6;
+  margin-left: -54rpx;
+}
+.itt-wrap{
+  width: 638rpx;
+	height: 559rpx;
+	font-family: PingFang-SC-Medium;
+	font-size: 30rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 53rpx;
+	color: #262626;
+  padding-left: 54rpx;
+} 
+.tabbar_text{
+  margin-top: -20rpx;
+}

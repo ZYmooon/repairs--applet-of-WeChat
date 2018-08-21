@@ -1,0 +1,27 @@
+.center-container{
+  background-color:#eee; 
+}
+.wrap{
+  margin-top: 10rpx;
+  padding: 25rpx 34rpx 25rpx 34rpx;
+  display: flex;
+  justify-content:space-between;
+  background-color:#fff; 
+}
+.describe{
+	height: 31rpx;
+	font-family: PingFang-SC-Medium;
+	font-size: 32rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #262626;
+  
+}
+.moreImg{
+  width: 15rpx;
+  height: 27rpx;
+  background-color: #999999;
+  margin-top: 12rpx; 
+  
+}
